@@ -50,3 +50,19 @@ import fetch from "node-fetch";
         console.error(`err: ${err}`);
     }
 })()
+
+// ------------------------- async/await: 使用 IIFAE -------------------------
+// let myPromise = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("... resolve ...")
+//         }, 3000);
+//     });
+// }
+
+// // IIFAE: 我是立即執行的，ASYNC函數
+// ~async function() {
+//     let prms = await myPromise(); // 可將 await 移除，觀察 print 的結果
+//     console.log(prms)
+//     console.log('Hello World!');
+// }()
